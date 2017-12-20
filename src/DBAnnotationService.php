@@ -11,9 +11,9 @@ class DBAnnotationService
     /** @var DBAnnotationParserInterface */
     protected $parser;
 
-    public function __construct(DBAnnotationParserInterface $parser)
+    public function __construct(array $classMap = [])
     {
-        $this->parser = $parser;
+        $this->parser = new DBAnnotationParser($classMap);
     }
 
     /**
