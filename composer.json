@@ -1,0 +1,19 @@
+{
+    "name": "brain-diminished/db-annotation",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dorian Savina",
+            "email": "dorian.savina@gmail.com"
+        }
+    ],
+    "require": {
+        "doctrine/dbal": "^2.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "BrainDiminished\\DBAnnotation\\": "src/"
+        }
+    },
+}
